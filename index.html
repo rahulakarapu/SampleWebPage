@@ -302,15 +302,19 @@
                     <div id="scroller" class="secondSection--container5--content">
                         <div>
                             <img src="assets/image-05.png">
+                            <h4>Slider Item 1</h4>
                         </div>
                         <div>
                             <img src="assets/image-06.png">
+                            <h4>Slider Item 2</h4>
                         </div>
                         <div>
                             <img src="assets/image-07.png">
+                            <h4>Slider Item 3</h4>
                         </div>
                         <div>
                             <img src="assets/image-08.png">
+                            <h4>Slider Item 4</h4>
                         </div>
                     </div>
                 </div>
@@ -399,14 +403,15 @@
                 }
             }
 
-            document.getElementById('rightArrow')
-                .addEventListener('click', function (event) {
-                    debugger;
-                    var translate;
-                    var elmnt = document.getElementById('scroller');
-                    translate -= 200;
-                    elmnt.style.transform = "translateX(" + translate + "px" + ")";
-                });
+            document.getElementById('rightArrow').addEventListener('click', function (event) {
+                var elmnt = document.getElementById('scroller');
+                elmnt.scrollLeft += 200
+            });
+
+            document.getElementById('leftArrow').addEventListener('click', function (event) {
+                var elmnt = document.getElementById('scroller');
+                elmnt.scrollLeft -= 200
+            });
 
             jQuery(function(){
                 jQuery('#all').click();

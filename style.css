@@ -450,4 +450,9 @@ body {
 .secondSection--container5--content > div > img {
     width: 375px;
     height: 300px;
+    margin-bottom: 2rem;
+}
+
+.secondSection--container5--content > div > h4 {
+    text-align: center;
 }
